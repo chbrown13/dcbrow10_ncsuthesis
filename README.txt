@@ -1,6 +1,6 @@
 --------------------------------------------------------------------
-NC State LaTeX class and file templates.
-E-mail: jmhykes@ncsu.edu
+Chris Brown's Dissertation LaTeX class and file templates.
+E-mail: dcbrow10@ncsu.edu
 Released under the LaTeX Project Public License v1.3c or later
 See http://www.latex-project.org/lppl.txt
 --------------------------------------------------------------------
@@ -14,10 +14,10 @@ example tex files demonstrating the use of the class file.
 
 Archive contents:
    Files:
-       * YourName-thesis.tex - main tex thesis document
+       * dcbrow10.tex - main tex thesis document
        * front.tex - front matter thesis content
        * optional.tex - ncsuthesis-compatible optional packages 
-       * YourName-thesis.bib - BibTeX references file
+       * dcbrow10.bib - BibTeX references file
 
        * ncsuthesis.cls - NC State thesis class
        * changepage.sty - A package to change margins within
