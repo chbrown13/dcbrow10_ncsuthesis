@@ -1,0 +1,52 @@
+\begin{table*}[tbh]
+\centering
+\caption{Pull Request Impact Results}
+\begin{threeparttable}
+\begin{tabular}{ |l|l|r|r|c| } \hline
+  \textbf{Characteristic} & \textbf{Dataset} & \textbf{Mean} & \textbf{Median} & \textbf{\textit{p-value}} \\ \hline
+ \multirow{2}{*}{\textbf{\em lifetime\_minutes***}} & with suggested changes & 34799.26 & 8190.43 & - \\
+ & without suggested changes & 18993.48 & 2489.12 & \textbf{$p$ < 0.00001} \\ \hline
+ \multirow{2}{*}{\textbf{\em mergetime\_minutes***}} 
+ & with suggested changes & 23645.15 & 5900.27 & - \\
+ & without suggested changes & 10378.82 & 1776.32 & \textbf{$p$ < 0.00001} \\ \hline
+ \multirow{2}{*}{\textbf{\em num\_commits***}} 
+ & with suggested changes & 8.62 & 4 & - \\
+ & without suggested changes & 6.72 & 1 & \textbf{$p$ < 0.00001} \\ \hline
+ \multirow{2}{*}{\textbf{\em src\_churn***}} & with suggested changes & 866.86 & 133 & - \\
+ & without suggested changes & 3212.64 & 26 & \textbf{$p$ < 0.00001} \\ \hline
+ % \multirow{2}{*}{test\_churn}  & with suggested changes & & & - \\
+ % & without suggested changes & & & \\ \hline
+ % \multirow{2}{*}{files\_added} & with suggested changes & & - \\
+ % & without suggested changes & & & \\ \hline
+ % \multirow{2}{*}{files\_deleted}  & with suggested changes & & & - \\
+ % & without suggested changes & & & \\ \hline
+ % \multirow{2}{*}{files\_modified}
+ % & with suggested changes & & & - \\
+ % & without suggested changes & & & \\ \hline
+ \multirow{2}{*}{files\_changed}
+ & with suggested changes & 7.71 & 2 & - \\
+ & without suggested changes & 11.54 & 2 & $p$ = 0.5051 \\  \hline
+%  \multirow{2}{*}{src\_files} 
+%  & with suggested changes & & & - \\
+%  & without suggested changes & & & \\ \hline
+ %\multirow{2}{*}{doc\_files} & with suggested changes & & & - \\
+ %& without suggested changes & & & \\ 
+ %& \textit{pullReqs} & 2.36 & 0.00 & \\\hline
+ %\multirow{3}{*}{other\_files} & with suggested changes & & & \\
+ %& without suggested changes & & & \\ 
+ %& \textit{pullReqs} & 2.74 & 0.00 & - \\ \hline
+ \multirow{2}{*}{\textbf{\em num\_commit\_comments***}} & with suggested changes & 13.56 & 7 & - \\
+ & without suggested changes & 2.00 & 0 & \textbf{$p$ < 0.00001} \\\hline
+ \multirow{2}{*}{\textbf{\em num\_issue\_comments***}} & with suggested changes & 8.63 & 5 & - \\
+ & without suggested changes & 5.03 & 3 & \textbf{$p$ < 0.00001} \\ \hline
+ \multirow{2}{*}{\textbf{\em num\_participants***}} & with suggested changes & 3.18 & 3 & - \\
+ & without suggested changes & 2.30 & 2 & \textbf{$p$ < 0.00001} \\ \hline
+
+\end{tabular}
+\begin{tablenotes}
+\centering
+\textbf{***} denotes statistically significant results (\textbf{p-value < 0.05})
+\end{tablenotes} 
+\end{threeparttable}
+\label{tab:sugg-impact}
+\end{table*}

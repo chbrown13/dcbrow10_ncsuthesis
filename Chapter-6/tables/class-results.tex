@@ -1,0 +1,41 @@
+\begin{table}[tbh]
+\centering
+\caption{\tooltwo Quality Results}
+\begin{threeparttable}
+\begin{tabular}{ |l|l|r|r|c| } \hline
+  \textbf{} & \textbf{Nudge?} & \textbf{Mean} & \textbf{Median} & \textbf{\textit{p-value}} \\ \hline
+ \multirow{2}{*}{\textbf{Grade***}} & No & 74.29 &  87.66 & - \\
+ & Yes & 76.89 & 95 &  \textbf{\em 0.0097***}  \\ \hline
+ \multirow{2}{*}{\textbf{Deductions}} & No & -20.71 & -5 & - \\
+ & Yes & -9.43 & 0 &  0.0672 \\ \hline
+\end{tabular}
+\begin{tablenotes}
+% \centering
+\textbf{***} denotes statistically significant results (\textit{p-value} $< 0.05$)
+\end{tablenotes} 
+\end{threeparttable}
+\label{tab:quality}
+\end{table}
+
+\begin{table}[tbh]
+\centering
+\caption{\tooltwo Productivity Results}
+\begin{threeparttable}
+\begin{tabular}{ |l|l|r|r|c| } \hline
+  \textbf{} & \textbf{Nudge?} & \textbf{Mean} & \textbf{Median} & \textbf{\textit{p-value}} \\ \hline
+ \multirow{2}{*}{\textbf{Commits}} & No & 9.84 & 7 & - \\
+ & Yes & 12.64 & 9 & 0.1646 \\ \hline
+ \multirow{2}{*}{\textbf{Code Churn***}} & No &  205.03 & 4 & - \\
+ & Yes & 1101.57 & 11 & \textbf{\em 0.0348***} \\ \hline
+ \multirow{2}{*}{}\textbf{First Commit***} & No &  8.32 & 7.41 & - \\
+ \textbf{(days)} & Yes & 1.99 & 5.94 & \textbf{\em $<$ 0.0001***} \\ \hline
+  \multirow{2}{*}{}\textbf{Last Commit} & No &  -21.72 & -1.60 & - \\
+ \textbf{(hours)} & Yes & -9.67 & -2.47 &  0.7909 \\ \hline
+\end{tabular}
+\begin{tablenotes}
+% \centering
+\textbf{***} denotes statistically significant results (\textit{p-value} $< 0.05$)
+\end{tablenotes} 
+\end{threeparttable}
+\label{tab:productivity}
+\end{table}

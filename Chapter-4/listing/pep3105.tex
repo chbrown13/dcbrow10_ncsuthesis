@@ -1,0 +1,10 @@
+\begin{listing}
+\centering
+ \caption{Example of a \PEP static analysis violation and fix}{}
+\begin{minted}[xleftmargin=6cm,fontsize=\small,linenos,firstnumber=9]{python}
+if status is True:
+-   print 'passed'
++   print('passed')
+\end{minted}
+\label{listing:pep}
+\end{listing}

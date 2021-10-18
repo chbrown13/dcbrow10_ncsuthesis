@@ -1,0 +1,103 @@
+\chapter{INTRODUCTION}
+\label{chap-intro}
+
+\section{Motivation}
+
+\subsection*{Decision-Making in Software Engineering}
+%% Defining territory
+% SE Decisions are important
+Humans make approximately 35,000 decisions everyday,\footnote{\url{https://go.roberts.edu/leadingedge/the-great-choices-of-strategic-leaders}} each with varying outcomes and consequences, good or bad. Similarly, professional software engineers, or developers, are frequently faced with consequential decisions in their work. For example, decision-making is regarded as the ``most undervalued'' and ``most important skill in software development'', even moreso than coding skills~\cite{WooDecision}, and a ``critical'' characteristic of \textit{great} software engineers~\cite{GreatSoftwareEngineer}. The importance of these choices grows as technology plays an increasingly vital role in our daily lives.
+
+Tools and guidelines informed by science can encourage humans to make better decisions and adopt beneficial behaviors. For example, the Center for Disease Control suggested wearing masks, social distancing, and avoiding crowds to prevent the spread of coronavirus.\footnote{\url{https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html}} In software engineering, researchers have developed and evaluated a wide variety of \textit{developer behaviors}, or tools and practices designed to help developers complete programming tasks more effectively and efficiently, and show these behaviors improve software development processes.
+
+%% Establish niche
+
+% Developers make bad decisions 
+
+However, like many ignored safety guidelines during the pandemic, developers frequently avoid useful developer behaviors in their work. For example, even though studies show static analysis tools are beneficial for preventing errors~\cite{GoogleFixit}, decreasing debugging time~\cite{Williams2007FaultFixTime}, and reducing developer effort~\cite{singh2017staticreview}, research also shows software engineers rarely use these tools in practice~\cite{Johnson2013Why}. Research also shows developers make other bad decisions while developing software such as avoiding security tools~\cite{Witschey2015Quantifying}, storing passwords in configuration files~\cite{Akond2019PropertiesIAC}, failing to upgrade software dependencies~\cite{Samim2017AutoPullRequests}, and neglecting ethical programming guidelines~\cite{McNamaraSmithE2018ACM}.
+
+This \textit{developer behavior adoption problem} leads to negative consequences that are costly for users and developers. For instance, developers at Zoom failed to secure the video conferencing platform, which led to many ``Zoom-bombing'' attacks and security vulnerabilities.\footnote{\url{https://blog.zoom.us/wordpress/2020/04/01/a-message-to-our-users/}} Additionally, software failures impact billions of users and cost trillions of dollars to repair each year~\cite{SoftwareFailWatch}. As society becomes more dependent on technology, it is becoming increasingly important to find ways to improve developer behavior while developing and maintaining software to prevent bad decisions and reduce the impact of their consequences on society.
+
+% Why their decisions are bad and they need help making decisions (decision fatigue, bad decisions, etc...
+
+%% Define a territory 2
+% Recommendation systems
+
+\subsection*{Developer Recommendations}
+
+To help increase adoption of useful behaviors, researchers have explored using automated recommender systems and bots to suggest actions to users. The ACM International Conference on Recommender Systems (RecSys) defines recommender systems as ``software applications that aim to support users in their decision-making while interacting with large information spaces''~\footnote{\url{https://recsys.acm.org/}, as quoted by~\cite{RSSE}}. 
+Likewise, recommendation systems for software engineering are designed to actively assist developers in seeking information and making decisions while developing software~\cite{RSSE}. Spyglass, for instance, is an automated recommender system that suggests code navigation tools in the Eclipse integrated development environment (IDE) to help developers save time and effort while searching through code to complete programming tasks~\cite{Spyglass}. 
+
+However, research also suggests existing approaches for automated recommendation systems and recommender bots are ineffective in their interactions with developers. For example, Viriyakattiyaporn and colleagues found that the inability to deliver suggestions in a timely manner discouraged programmers from adopting tool recommendations from Spyglass~\cite{viriyakattiyaporn2009challenges}. Additionally, studies report developers face many challenges interacting with bots in open source software~\cite{wessel2018power}, have negative perceptions of bots to automatically manage software dependencies~\cite{Samim2017AutoPullRequests}, and express more frustration in conversations with chatbots compared to humans~\cite{Hill2015Chatbots}.
+
+%% Establish niche 2
+% Peer recommendations
+
+While many automated approaches have been developed to help developers make better choices, research shows that face-to-face recommendations between humans are the most effective. For example, Murphy-Hill and colleagues found that \textit{peer interactions}, or the process of learning about tools from coworkers during normal work activities, are the most effective method for software engineering tool discovery compared to other technical approaches such as tool encounters in development environments, social media and websites, tutorials, and discussion threads online~\cite{Murphy-Hill2011PeerInteraction}. Additionally, research shows knowledge sharing and learning from peers are benefits of \textit{pair programming}, or developers working together on the same computer to complete programming tasks~\cite{Cockburn01Pair}.
+
+However, even though peer interactions are the most effective method for recommendations to developers, Murphy-Hill also found these recommendations between colleagues occur infrequently in the workplace~\cite{Murphy-Hill2011PeerInteraction}. There are many barriers to peer interactions, such as increased physical isolation due to remote work, developers working in different programming environments, and software engineers being unwilling to learn and share tool knowledge~\cite{Murphy-Hill2015HowDoUsers}. The decline of peer interactions and ineffectiveness of existing automated approaches point to the need for new methods to effectively recommend beneficial behaviors to software engineers in their work.
+
+%% Occupy the niche
+
+\section{Research Overview}
+
+To improve the effectiveness of automated recommendations encouraging developers to adopt better practices, my research involves interdisciplinary work analyzing the developer behavior adoption problem through the lens of behavioral science. Specifically, I explore using \textit{nudge theory}, a behavioral science concept for improving human behavior and decision-making, to encourage developers to make better decisions and adopt beneficial behaviors. A \textit{nudge} refers to any factor that impacts human decision-making without providing incentives to individuals or banning alternative options~\cite{nudge}. Additionally, \textit{digital nudges} refer to using technology and user interfaces to influence user behavior in digital choice environments~\cite{weinmann2016digitalnudging}. More details and examples of nudge theory can be found in Chapter~\ref{chap-bg} of this dissertation.
+
+ In nudge theory, \textit{choice architecture} is the idea that the way choices are framed and presented impacts human decisions~\cite{thaler2013choice}. To incorporate nudge theory into automated recommendations for developer behavior, my research introduces \FRAMEWORK, a conceptual framework to improve the way recommendations are displayed to software engineers in their work. This framework consists of three design principles:
+\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item \textit{actionability}, or the ease with which developers can adopt the target behavior
+    \item \textit{feedback}, or the clarity and relevance of the information provided
+    \item \textit{locality}, or the placement and timing of recommendations.
+\end{enumerate}
+
+To construct and evaluate the framework, this work consists of mixed-methods studies collecting and analyzing quantitative and qualitative data to characterize problems with developer recommendations and evaluate tools and techniques to overcome these challenges. The thesis of this dissertation argues we can encourage developers to adopt behaviors to improve the quality of their work and productivity of their development processes by incorporating \framework into automated recommendations.
+
+
+\section{Contributions}
+
+This research advances knowledge by making several contributions to defend the thesis statement presented in Chapter~\ref{chap-thesis}:
+
+\begin{quote}
+\textsl{By incorporating \framework into recommendations for software engineers, we can nudge developers to adopt behaviors useful for improving code quality and developer productivity.}   
+\end{quote}
+
+To examine ``recommendations for software engineers'', this research posits: 
+
+\begin{itemize}
+    \item a \textit{set of experiments} investigating why \textit{peer interactions} are effective for improving developer behavior and introducing the \tele baseline automated recommendation approach to evaluate the ineffectiveness of recommendations from bots.
+\end{itemize} 
+
+To explore how ``we can nudge developers to adopt behaviors'', this work presents:
+
+\begin{itemize}
+    \item a \textit{conceptual framework}, \FRAMEWORK, to apply concepts from nudge theory to improve the effectiveness of automated recommendations to software engineers.
+\end{itemize}
+
+To defend the claim that ``incorporating developer recommendation choice architectures into recommendations for software engineers...can nudge developers to adopt behaviors useful for improving code quality and developer productivity'', this research submits:
+\begin{itemize}[itemsep=-1ex,partopsep=1ex,parsep=1ex]
+     \item a \textit{set of experiments} analyzing \suggs, an novel recommendation system that incorporates the framework principles to support code recommendations between developers on pull requests.
+    \item \tooltwo, a novel \textit{automated recommender system} that incorporates \framework to generate digital nudges recommending useful developer behaviors to programmers.
+\end{itemize} 
+
+
+\section{Outline}
+
+The remainder of this dissertation characterizes my research and presents experiment methods and results used to provide evidence to support the thesis statement (Chapter~\ref{chap-thesis}) and investigate the research problem and objectives (Chapter~\ref{chap-intro}).
+
+Chapter~\ref{chap-bg} provides background information for this research, including more details about \textit{developer behavior} and \textit{nudge theory}, two concepts that are critical for the research presented in this dissertation, and describes the existing literature related to this body of work.
+
+Chapter~\ref{chap-peer} describes preliminary work examining different recommendation approaches to gain insight into what makes an effective recommendation to developers and motivate the need for a novel approach for suggesting developer behaviors.
+
+Chapter~\ref{chap-framework} introduces \framework and presents a formative evaluation exploring \textit{actionability}, one of the \framework, to gather insight on recommendations with this framework from developers.
+
+Chapter~\ref{chap-suggs} presents studies analyzing \suggs, an existing recommender system that incorporates the \framework principles, to evaluate the framework by comparing this system to other recommendation styles and empirically analyzing its impact on GitHub development practices.
+
+Chapter~\ref{chap-bot} introduces a novel recommendation system, \tooltwo, a tool designed to use \framework in automated notifications. This section presents the results of a study using \tooltwo to improve the development behaviors of students on programming assignments.
+
+Chapter~\ref{chap-end} revisits the thesis statement and the contributions of the research presented in this body of work. This dissertation concludes with broader implications and future directions for \framework, using this framework to continue observing and enhancing developer behavior and motivating the design of future tools for making recommendations to improve the productivity, decision-making, and behavior of developers.
+
+Finally, the appendix includes supplemental information and study materials for the research and experiments presented in this dissertation.
+
+
+
+

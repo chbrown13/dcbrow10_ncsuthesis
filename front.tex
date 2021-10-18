@@ -1,0 +1,99 @@
+%% ------------------------------ Abstract ---------------------------------- %%
+\begin{abstract}
+
+Decision-making is a vital part of software engineering. Professional software engineers, or developers, are regularly faced with decisions in their work. Moreover, as societal dependence upon technology increases, so does the complexity and impact of the choices programmers make during development processes. Although effective decision-making is critical for developing and maintaining quality software, developers frequently make bad decisions in practice. For example, software engineers often avoid useful \textit{developer behaviors}, or tools and practices designed to help developers complete programming tasks. Despite scientific evidence of their benefit, studies show developers often ignore valuable behaviors such as adopting development tools, secure coding practices, ethical programming guidelines, and other constructive activities.
+
+To increase the adoption of developer behaviors, existing research suggests face-to-face recommendations between colleagues is the most effective method for software engineers to learn about development tools and practices. However, opportunities for these in-person interactions between developers are declining as software engineering teams become more globally distributed and physically isolated via increased remote work among programmers. Bots and automated tools have also been utilized as a means to increase adoption of developer behaviors among software engineers. Yet, despite the advantages of using bots for automating programming tasks, developers often find automated recommendations from these systems to be ineffective and intrusive.
+
+The goal of this research is to fill the gap created by the decline in face-to-face recommendations and the inadequacy of automated approaches to increase the adoption of useful developer behaviors. To achieve this goal, my work introduces \FRAMEWORK, a conceptual framework for incorporating behavioral science concepts, specifically \textit{nudge theory}, into automated recommendations for developers. Nudge theory is a framework for improving human behavior that focuses on influencing the environment surrounding decision-making, or \textit{choice architecture}, without 1) providing incentives or 2) banning alternative options. In this work, I aim to use \textit{digital nudges}, or incorporate technology to nudge humans toward better decisions in digital choice environments, to encourage software engineers to adopt better behaviors.
+
+This dissertation advances knowledge in the field by using \framework to design automated recommendations for improving the decision-making and behavior of software engineers. This novel framework consists of three principles: \textit{actionability}, \textit{feedback}, and \textit{locality}. The thesis of this research argues that \framework can nudge programmers to adopt better behaviors while developing software, resulting in enhanced code quality and increased productivity for developers. To construct the framework and evaluate this thesis statement, my dissertation consists of a collection of studies exploring recommendations to developers in software engineering:
+
+
+
+% To provide evidence supporting this framework, I collected quantitative and qualitative data from experiments observing the behavior of computer science students, open source software developers, and professional software engineers in industry. Our results show that .
+
+
+
+%My thesis argues incorporating this framework in recommendations can nudge software engineers to adopt better behaviors useful for improving code quality and developer productivity. To support this thesis, my research involved:
+
+\begin{enumerate}
+    \item To learn what makes effective recommendations for developers, I conducted studies analyzing two different recommendation techniques:
+    \begin{enumerate}
+        \item First, I analyzed characteristics of \textit{peer interactions} to determine why face-to-face recommendations are effective. We found that tool suggestions from colleagues are beneficial for improving developer behavior because of their ability to foster \textit{receptiveness}, i.e. users are likely to adopt familiar and desirable systems whereas politeness, persuasiveness, and types of tools are less impactful for decisions.
+        \item Next, I introduced the \tele as a baseline approach for generating recommendations from bots. This approach was implemented in \toolone, a system for generating tool recommendations. We found our bot was ineffective for developers because it violated \textit{social context} and interrupted \textit{developer workflow}, motivating the need for novel automated recommendation approaches.
+    \end{enumerate} %Software engineering research suggests \textit{peer interactions}, or face-to-face recommendations between colleagues during normal work activities, are an effective method for developers to adopt new behaviors, such as using static analysis tools. However, little is known about the nature of these human-to-human interactions. In the first study, I conducted a experiment to observe characteristics of peer interactions between participants and discover why they are effective for tool recommendations.
+    
+    \item To devise a new approach to improve automated recommendations, I used these findings and concepts from nudge theory to formulate \framework. I conducted a formative evaluation to explore the impact of this framework on automated suggestions and show it creates preferable recommendations for software engineers.
+    
+    %\item Next, we found that \textit{social context} and \textit{developer workflow} are key factors in making effective recommendations to software engineers. Research also suggests developers often have negative and challenging interactions with bots. To explore why automated recommendations are ineffective, I introduced the \tele to provide a baseline approach for automated recommendation systems. This design was implemented and evaluated using \toolone, a bot to automatically recommend static analysis tools to developers. The findings from these two studies are used to formulate our conceptual framework.
+    
+    \item To evaluate the conceptual framework, I analyzed \framework within existing recommendation systems by conducting two studies investigating \suggs, a recent tool that incorporates all of the framework principles: 
+    \begin{enumerate}
+        \item The first of these studies explores styles of recommendations by observing developers interacting with different recommender systems. Participants preferred tool recommendations from the suggested changes feature over suggestions from other systems, such as email, because of its clear \textit{communication} and effortless \textit{workflow integration}. 
+        \item The second study empirically analyzed the impact of suggested changes on GitHub development practices. We found recommendations from this system are well-accepted by programmers, improve the timing of recommendations between peers, boost coding activity, and increase discussions between developers during code reviews.
+        \end{enumerate}
+    %\item Then, we identified \textit{user-driven communication} and \textit{workflow integration} as reasons why developers adopt recommendations from existing systems. GitHub, a popular code hosting and collaboration website, recently introduced the new \textsl{suggested changes} feature, which allows users to recommend code improvements to developers on pull requests submitted to repositories. We chose to evaluate \suggs because they incorporate my \framework and are very popular with developers on the platform. This study consisted of a multi-methodological experiment to empirically analyze the \suggs and explore how this system impacts recommendations between developers.
+    
+    \item To further evaluate \framework, I developed \tooltwo, an automated system that integrates the framework principles to recommend beneficial developer behaviors to students working on programming assignments. We found this system was useful for enhancing the quality of students' code and increasing their productivity.
+\end{enumerate}
+
+The contributions of this work are \framework, a \textit{conceptual framework} for designing automated recommendations to developers, the above \textit{set of experiments} which motivate and provide evidence for the framework, and an \textit{automated recommender system} that incorporates the framework to make recommendations for developer behaviors. This dissertation concludes with broader implications and future directions for using \framework to improve the productivity, decision-making, and behavior of developers.
+
+% Nudges are effective for improving behavior due to their ability to affect \textit{choice architecture}, or the way choices are presented and framed to decision-makers, which research suggests impacts the outcome of decisions. This work seeks to apply this theory into software engineering to explore the impact of nudges for improving developer behavior and introducing \textbf{\em developer recommendation choice architectures} to design and frame decisions in the context of adopting programming tools and practices. The contributions of this work are: 1) a \textit{conceptual framework} explaining how to apply concepts from nudge theory when making recommendations to software developers, 2) a \textit{set of experiments} that support and evaluate the conceptual framework, and 3) an \textit{automated recommender system}, \textsl{nudge-bot}, that utilizes the proposed framework to recommend useful developer behaviors. My goal is to demonstrate that automated nudges can encourage software engineers to adopt beneficial developer behaviors.
+% \lipsum[1-6]
+
+
+\end{abstract}
+
+
+%% ---------------------------- Copyright page ------------------------------ %%
+%% Comment the next line if you don't want the copyright page included.
+\makecopyrightpage
+
+%% -------------------------------- Title page ------------------------------ %%
+\maketitlepage
+
+%% -------------------------------- Dedication ------------------------------ %%
+\begin{dedication}
+\centering This work is dedicated to all of my family and friends. 
+\vspace{0.6cm}
+
+``\textit{Rejoice in hope, be patient in tribulation, be constant in prayer.}'' \\ \textsc{Romans 12:12}
+\end{dedication}
+
+%% -------------------------------- Biography ------------------------------- %%
+\begin{biography}
+Dwayne Christian Brown, Jr., also known as ``Chris'', received his high school diploma from Rock Hill High School in Rock Hill, SC. Afterwards, he obtained his Bachelor of Science degree in Computer Science from Duke University in 2013, where he conducted research studying K-12 Computer Science education and graduated with Distinction after completing his honors thesis, ``\textit{Integrating Computer Science Into Middle School Mathematics}'', under the supervision of Dr. Susan Rodger. Upon the completion of his undergraduate degree, Chris spent two years as a contracted Python developer working for Bank of America in Charlotte, NC. 
+
+Motivated by his previous research experiences, Chris decided to return to graduate school to pursue a Ph.D. in Computer Science at North Carolina State University in 2015. He began his graduate career working with Dr. Emerson Murphy-Hill, under whom he obtained a Master of Science in Computer Science in 2017. During his time at NC State, Chris gained further industry experience through internships at Blackbaud (2016) and Red Hat (2017 and 2018). He also added teaching experiences as a TA for undergraduate software engineering (CSC326) and Java programming concepts (CSC216) courses with Dr. Sarah Heckman in addition to teaching the introductory Java programming course (CSC116) during Summer 2020. 
+
+Chris' doctoral research, under the advisement of Dr. Chris Parnin, explores improving the behavior of software engineers by integrating concepts from behavioral science into bots and automated systems. His research interests lie in the intersection of human factors, automation and tools, and empirical software engineering. Chris' research philosophy involves characterizing software engineering problems and developing tools and techniques to help solve these issues, with the goal of improving the behavior, productivity, and decision-making of programmers. He will join the Department of Computer Science at Virginia Tech as an Assistant Professor in Fall 2021.
+
+\end{biography}
+
+%% ----------------------------- Acknowledgements --------------------------- %%
+\begin{acknowledgements}
+
+First, I want to acknowledge my family, without whom this achievement would not have been possible. Thank you to my wife (Bethany Wagner Brown), parents (Dwayne Sr. and Banita), siblings (Kristen, Anita, and Nathaniel), grandfather (Walter White), and other relatives (Clifford, Waltrina, Cliff Jr., Walter, Helen, and Kyle) for your prayers, confidence, and encouragement. Additionally, I want to thank the many friends who provided support and encouragement throughout this process.
+
+Next, I would like to thank the committee members for their time and feedback on my dissertation. To my advisor, Dr. Chris Parnin, for welcoming me to his research group and providing valuable guidance on my work. To Dr. Sarah Heckman, for believing in me as a TA, summer instructor, and providing insight into research and teaching. To Dr. Katie Stolee, for recruiting me for collaborations to expand my research knowledge and experience. And to Dr. Anne  McLaughlin, for your collaboration and lending your psychology expertise to this interdisciplinary work. 
+
+Additionally, I want to acknowledge Dr. John-Paul Ore who stepped in as an emergency substitute committee member for my oral prelim exam. I am also extremely grateful for my undergraduate research advisors: Dr. Chad Jenkins for providing my first research experience through the CRA Distributed Research Experiences for Undergraduate (DREU) program and Dr. Susan Rodger, whose teaching, advising, and mentorship was invaluable for my career and motivated me to major in Computer Science at Duke University and to further pursue CS research.
+
+I am very grateful to the current and past members of the software engineering research groups at North Carolina State University, including \texttt{alt-code}, the now-defunct Developer Liberation Front, RealSearch, RAISE, Dr. Stolee's lab, and all of the other students and researchers that have come through Engineering Building II rooms 3228 and 3229 over the years who have helped make NC State a Top 3 SE research program in the world.\footnote{\url{http://csrankings.org/\#/index?soft&world}} I am proud to have been a part of this group and your collaborations, data analysis, feedback, and casual discussions have elevated my research and made this work possible.  Additionally, these interactions have been dearly missed during the pandemic. 
+
+I would also like to thank other faculty, staff, and students in the department who have supported my throughout the CSC PhD program at NC State, including Dr. Guoliang Jin, Dr. Jamie Jennings, Leslie Rand-Picket and Kayla Bethea, Andrew Sleeth, the CSC Recruitment volunteers (both who recruited me and who I've worked with to recruit others), the Bahlers intramural basketball team, and the accountability writing group. Additionally, thanks to Jamin Quimby at Blackbaud and Og Maciel and Jake Callahan with the Satellite QE team at Red Hat for organizing excellent internship experiences.
+
+%Specifically, in no particular order, I want to thank Justin Middleton, Sarah Elder, Mahnaz Behroozi, Samim Mirhosseini, Nischal Shrestha, Eric Horton, Denae Ford Robinson, Shivani Shirolkar, Nasif Imtiaz, Joy Chakraborty, Shrikanth N C, Rezvan Mahdavi, Gina Bai, George Mathew, Kai Presler-Marshall, Zahra Sadri, Peipei Wang, Akond Rahman, Nirav Ajmeri, Peng Sun, Chris Theisen, Zhe Yu, Rui Shu, Huy Tu, Rahul Krishna, Jianfeng Chen, Rahul Pandita, Jason King, Pat Morrison, Brittany Johnson, Justin Smith, Titus Barik, and more for your collaborations, data analysis, feedback, or random chats in the hallway, and . 
+
+There are too many people to thank for their contributions and support of this work in a variety of ways, and I sincerely apologize to anyone I overlooked. This work is primarily based on research supported by the National Science Foundation grant \#1714538. Finally, I would like to thank all of the students and professional developers who volunteered their time to participate in the studies included in this dissertation. Without them, this research would have been impossible.
+ 
+\end{acknowledgements}
+
+
+\thesistableofcontents
+
+\thesislistoftables
+
+\thesislistoffigures
